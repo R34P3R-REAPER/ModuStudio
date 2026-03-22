@@ -1,24 +1,42 @@
-# ModuStudio
-A modular, synchronized hardware ecosystem for solo creators. Featuring the Arc-Rail gantry and the Sentry wireless door-lock.
-# 🛠️ ModuStudio: The IKEA of Studio Automation
+# 🎥 ModuStudio: The IKEA of Studio Automation
 **A high-effort, modular hardware ecosystem designed to eliminate 'setup friction' for solo creators.**
 
 ## 🚀 The Vision
-In many creative spaces, especially in shared environments in Nairobi, setting up professional gear takes 30-45 minutes. ModuStudio automates the physical studio environment so you can begin filming in seconds.
+In shared creative environments, setup friction is the enemy of consistency. ModuStudio automates the physical studio environment—allowing creators to transition from "Idea" to "Action" in under 60 seconds.
 
-## 📦 The Modules
-### 1. The Arc-Rail (The Muscle)
-A 1.5m overhead motorized gantry built from **2040 V-Slot Aluminum**. Using **NEMA 17 Stepper Motors** and **TMC2208 Silent Drivers**, it deploys cameras and lighting silently to a pre-set 'Action' position.
+---
 
-### 2. The Sentry (The Physical Firewall)
-A wireless **ESP32-powered** security unit. When the rail deploys, it triggers a **12V Solenoid Bolt** to physically lock the door and displays a "Recording" status on an OLED screen to prevent interruptions.
+## 🛠️ Phase 1: Core Architecture (Day 1 - 5 Hour Sprint)
+Today's deep-dive established the "Skeleton and Nervous System" of the ecosystem.
 
-## 🎨 Design Philosophy
-I approach hardware through a 'Concept-to-Casing' lens. I use architectural sketching (see below) to visualize structural integrity and spatial integration before moving to physical assembly.
+### 1. The Arc-Rail (Structural Backbone)
+*   **The Chassis:** Optimized for a 1.5m overhead span using **Dual 750mm 2040 V-Slot Aluminum**. 
+*   **The Logic:** Integrated **NEMA 17 Stepper Motors** with **TMC2208 Silent Drivers** in Onshape.
+*   **Engineering Note:** Designed a modular "Rail Joiner" system to ensure global shippability (The IKEA Principle).
 
-![Cabin Concept](https://github.com)
+### 2. The Sentry (Distributed Intelligence)
+*   **The Brain:** Powered by an **ESP32-C3** for a minimal footprint.
+*   **Physical Firewall:** Configured a **12V Solenoid Bolt** (CAD finalized) and an OLED status display.
+*   **Protocol:** Implemented **ESP-NOW** for sub-10ms wireless handshaking between the Rail Master and the Sentry Node.
 
-## 📅 Roadmap
-- **March 22:** Fellowship Submission / Project Launch.
-- **April - June:** 60-Hour Build for **Fallout '26**.
-- **July:** Final Prototype / Goal: Shenzhen.
+### 3. The Integrated Gantry (Kinematics)
+*   Finalized the **Carriage Plate** in Onshape (100mm x 120mm). 
+*   Calculated a **60mm wheelbase** to ensure zero-torsion travel when carrying a full-frame DSLR.
+
+---
+
+## 🎨 Design Philosophy: "Concept-to-Casing"
+I approach hardware through an architectural lens, prioritizing spatial integration. 
+> *Current Design Language: Matte Black Aluminum + Dark Walnut Accents.*
+
+![ModuStudio Hero Visualization](https://your-link-to-hero-render.png)
+
+## 📅 Roadmap & Build Logs
+- **March 22:** [Project Launch & Architecture Finalized] (Hour 1-5)
+- **April:** Phase 2 - Motion Control & ESP-NOW Handshake (Hour 10-25)
+- **May:** Phase 3 - Structural Assembly & Stress Testing (Hour 30-50)
+- **June:** Final UX Polish & Haptic Console Integration (Hour 60)
+- **July:** Final Prototype / Goal: Shenzhen Fellowship.
+
+---
+*Developed for the Hack Club Fallout '26 Program.*
