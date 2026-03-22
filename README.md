@@ -1,41 +1,44 @@
 # 🎥 ModuStudio: The IKEA of Studio Automation
 **A high-effort, modular hardware ecosystem designed to eliminate 'setup friction' for solo creators.**
-<img width="1408" height="768" alt="Image" src="https://github.com/user-attachments/assets/04274c94-6cb1-401b-9be2-09d843d6c1aa" />
+
+![ModuStudio Hero Vision](assets/modustudio-hero-vision.png)
+
 ## 🚀 The Vision
 In shared creative environments, setup friction is the enemy of consistency. ModuStudio automates the physical studio environment—allowing creators to transition from "Idea" to "Action" in under 60 seconds.
 
 ---
 
-## 🛠️ Phase 1: Core Architecture (Day 1 - 5 Hour Sprint)
-Today's deep-dive established the "Skeleton and Nervous System" of the ecosystem.
+## 🏗️ Mechanical Specification (Day 1 - 5 Hour Sprint)
+Today's deep-dive established the "Skeleton" of the ecosystem, focusing on torsional rigidity and modularity.
 
-### 1. The Arc-Rail (Structural Backbone)
-*   **The Chassis:** Optimized for a 1.5m overhead span using **Dual 750mm 2040 V-Slot Aluminum**. 
-*   **The Logic:** Integrated **NEMA 17 Stepper Motors** with **TMC2208 Silent Drivers** in Onshape.
-*   **Engineering Note:** Designed a modular "Rail Joiner" system to ensure global shippability (The IKEA Principle).
+![Arc-Rail Exploded Spec](assets/arc-rail-exploded-spec.png)
 
-### 2. The Sentry (Distributed Intelligence)
-*   **The Brain:** Powered by an **ESP32-C3** for a minimal footprint.
-*   **Physical Firewall:** Configured a **12V Solenoid Bolt** (CAD finalized) and an OLED status display.
-*   **Protocol:** Implemented **ESP-NOW** for sub-10ms wireless handshaking between the Rail Master and the Sentry Node.
+### The Arc-Rail Backbone
+*   **Chassis:** Dual 750mm **2040 V-Slot Aluminum** extrusion for a total 1.5m span.
+*   **Carriage:** 100x120mm Walnut/Aluminum hybrid chassis with a 60mm wheelbase.
+*   **Motion:** NEMA 17 Stepper + GT2-20T Pulley system for silent, high-torque travel.
+*   **The "IKEA" Factor:** Integrated a Precision Rail Joiner system for modular shipping and assembly.
 
-### 3. The Integrated Gantry (Kinematics)
-*   Finalized the **Carriage Plate** in Onshape (100mm x 120mm). 
-*   Calculated a **60mm wheelbase** to ensure zero-torsion travel when carrying a full-frame DSLR.
+---
+
+## ⚡ Electronic Architecture & Distributed Logic
+ModuStudio uses a **Star Topology** to ensure all modules react simultaneously to the "Record" trigger.
+
+![ESP-NOW Network Map](assets/esp-now-network-map.png)
+
+### The Sentry Protocol
+*   **Brain:** ESP32-S3 (Master) & ESP32-C3 (Node).
+*   **Communication:** **ESP-NOW** (Low-latency Wireless) for <10ms response time.
+*   **Action:** When the Rail deploys, the Sentry triggers a 12V Solenoid Bolt and updates its OLED status to **"ON-AIR: LOCKED"**.
 
 ---
 
 ## 🎨 Design Philosophy: "Concept-to-Casing"
-I approach hardware through an architectural lens, prioritizing spatial integration. 
-> *Current Design Language: Matte Black Aluminum + Dark Walnut Accents.*
+Hardware is approached through an architectural lens, prioritizing spatial integration and premium aesthetics (Matte Black + Dark Walnut).
 
-![ModuStudio Hero Visualization](https://your-link-to-hero-render.png)
-
-## 📅 Roadmap & Build Logs
+## 📅 Roadmap
 - **March 22:** [Project Launch & Architecture Finalized] (Hour 1-5)
 - **April:** Phase 2 - Motion Control & ESP-NOW Handshake (Hour 10-25)
-- **May:** Phase 3 - Structural Assembly & Stress Testing (Hour 30-50)
-- **June:** Final UX Polish & Haptic Console Integration (Hour 60)
 - **July:** Final Prototype / Goal: Shenzhen Fellowship.
 
 ---
