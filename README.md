@@ -1,7 +1,7 @@
 # 🎥 ModuStudio: The IKEA of Studio Automation
 **A high-effort, modular hardware ecosystem designed to eliminate 'setup friction' for solo creators.**
 
-![ModuStudio Hero Vision](assets/modustudio-hero-vision-renderV1.png)
+![ModuStudio Hero Vision](assets/modustudio-hero-vision-render-v1.png)
 
 ## 🚀 The Vision
 In shared creative environments, setup friction is the enemy of consistency. ModuStudio automates the physical studio environment—allowing creators to transition from "Idea" to "Action" in under 60 seconds.
